@@ -1,0 +1,97 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey700: hsl(0, 0%, 20%);
+  --grey800: hsl(0, 0%, 12%);
+  --grey900: hsl(0, 0%, 8%);
+  --font-size: 14px;
+  --radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--font-size);
+  background-color: var(--grey900);
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile {
+  min-width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 2rem 0;
+  background-color: var(--grey800);
+  padding: 1.25rem;
+  border-radius: var(--radius);
+}
+
+.profile--text {
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.about {
+  color: var(--green);
+}
+
+.profile--image {
+  border-radius: 50%;
+  width: 5rem;
+}
+
+.profile--button {
+  width: 100%;
+  padding: 0.6rem;
+  background-color: var(--grey700);
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 375px) {
+  .profile {
+    min-width: 30%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .profile {
+    min-width: 50%;
+  }
+}
+
+.attribution {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+  }
